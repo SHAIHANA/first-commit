@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button use</title>
+    <script src="./script.js"></script>
+</head>
+<body>
+    <!-- <h1 id="head">Welcome to DOM</h1>
+    
+     <button onclick="colorchange()">Click Me</button>
+      -->
+
+
+ <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. In corrupti, laborum ratione iusto quae, praesentium mollitia accusantium modi quisquam, debitis eos. Necessitatibus repudiandae dolorum, 
+        nulla aliquid enim labore reiciendis officiis. <br>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Error deleniti blanditiis repellat est enim sed incidunt aspernatur tenetur quos, expedita tempora voluptates maiores qui dolorem dolor quas amet quibusdam quae.
+    </p> 
+
+    <button onclick="bgcolor()">Try Me</button>
+<script>
+    // for button
+    
+    // function colorchange() {
+    // // const doc=document.getElementById("head")// document is h1 aanu
+    // const doc=document.getElementById("head")
+    //     console.log(doc);
+    //     doc.style.color="red"
+    //     doc.style.backgroundColor="black"
+    // }
+
+    function bgcolor() {
+        // const doc1=document.getElementById("para")//document P aaanu
+       const doc1=document.getElementsByClassName("para")
+        console.log(doc1);//HTML collection ayt varm class ayond-sp arrayilot convert akanam
+        
+// using classsss--arrayilot matanam so Array.from use aki
+        console.log(Array.from(doc1).map(item=>item.style.backgroundColor="red"));
+        
+// FOR USING ID NAME
+        // doc1.style.backgroundColor=("green")
+        // doc1.style.color=("red")
+      
+        
+
+        
+    }
+    
+</script>
+
+</body>
+</html>

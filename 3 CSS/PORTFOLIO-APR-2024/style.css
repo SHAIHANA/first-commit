@@ -1,0 +1,438 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    
+    
+}
+
+
+#body{
+   background-color: rgba(60, 52, 5, 0.462);
+   padding-bottom:20px;
+   width:100%;
+  
+}
+
+header{
+    background-color:rgba(210, 143, 92, 0.617);
+    width:100%;
+    position: sticky;
+    top: 0px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+nav img{
+    border-radius: 20px;
+    width:30px;
+    height: 30px;
+    
+}
+
+ul{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    
+}
+ul li{
+   color: rgb(0, 6, 7);
+    margin: 10px ;
+    list-style: none;
+}
+a{
+   color: rgb(41, 65, 112); 
+   text-decoration: none;
+   font-size: 13px;
+   
+}
+a:hover{
+    color: rgb(0, 0, 0); 
+    text-shadow:3px 4px 5px;
+    text-decoration-line: underline;
+}
+
+
+ #video{width: 100%;
+}
+video{width: 100%;}
+
+#video h1{
+    position: absolute;
+    color: rgba(10, 114, 111, 0.557);
+    font-family: "Jaro", sans-serif;
+    text-align: center;
+    padding: 300px;
+    font-size: 80px;
+}
+
+
+
+
+#faceimage img{
+    align-items: center;
+    padding-left: 125px;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    width: 80%;
+    height: 700px;
+   
+    
+}
+ #faceimage h1{
+    
+    font-family: "Oswald", sans-serif;
+    font-size: 50px;
+    color: rgba(250, 254, 255, 0.395);
+    position: absolute;
+    text-align: center;
+    padding:300px ;
+}
+
+
+
+#about h2{
+        text-align: center;
+        text-decoration: underline;
+        font-size: 30px;
+        padding: 10px;
+        color: rgb(3, 27, 35);
+        font-family: "Poetsen One", sans-serif;
+}
+#about h2:hover{color: rgba(9, 118, 111, 0.691);
+}
+
+#about h3{
+    padding-bottom: 5px;
+    font-size: 25px;
+    font-family: "Dancing Script", cursive;
+    color: rgb(36, 9, 62);
+    text-align: center;
+}   
+
+#raw { display:flex;
+padding-top: 10px;
+align-items: center;
+padding-right: 30px;
+}
+
+#raw p{
+        font-family: "Dancing Script", cursive;
+        text-align: justify;
+        color: rgba(42, 7, 64, 0.806);
+       
+        font-size: 20px;
+}
+#about img{
+        border-radius:50%;
+        padding: 90px;
+        height: 30%;
+}
+   
+
+#projects h2{text-align: center;
+    font-family: "Poetsen One", sans-serif;
+}
+
+.raw1{display: flex;
+       justify-content: space-evenly;
+       padding: 20px;
+}
+.raw2{display: flex;
+      justify-content: space-evenly;
+      padding: 20px;
+}
+.col:hover{
+    box-shadow: 4px 5px 6px 7px black;
+}
+.col img:hover{
+    
+    transform: rotate(150deg);
+}
+.col img{
+    transition:width 2s, height 2s,transform 2s;
+}
+
+
+#head {text-align: center;
+    text-decoration: underline;
+    padding-top: 20px;
+    font-family: "Poetsen One", sans-serif;
+}
+
+.raw3{display: flex;
+       justify-content: space-evenly;
+        padding: 20px;
+}
+
+.col1 {text-align: justify;
+  padding-top: 100px;
+  border: 2px solid black;
+  margin: 10px;
+  padding: 10px;
+  background: linear-gradient(to top ,  rgb(5, 85, 81)50% , rgb(40, 171, 171).50%);
+  transition: all 0.5s;
+  background-size: 100% 200%;
+
+}
+.col1:hover{
+    background-position: bottom;
+}
+.col1 h3{text-align: center;
+    font-family: "Poetsen One", sans-serif;}
+.col1 p{text-align: justify;
+    font-family: "Barlow Condensed", sans-serif;
+}
+
+
+#contact h2{
+    font-family: "Poetsen One", sans-serif;
+    text-decoration: underline;
+    padding-bottom: 10px;
+    text-shadow: 2px 3px 5px rgb(208, 98, 19);
+}
+#contact{
+    padding-bottom: 50px;
+}
+
+button{padding:5px;
+     
+}
+form{
+    align-items: center;
+    padding: 10px;
+    height: 10px;
+    background-color: rgb(95, 71, 5);
+    margin:10px ;
+    margin-bottom: 20px;
+}
+.inp{width: 300px;
+    height: 300%;
+
+}
+
+
+/* /* */
+
+@media screen and (max-width:400px)
+{
+ 
+    
+    #body{
+       background-color: rgba(140, 198, 147, 0.462);
+       padding-bottom:20px;
+       width:468px;
+       padding: 0px;
+       margin-right: 0px;
+      
+    }
+    
+    header{
+       
+    }
+    nav{
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+       
+    }
+    nav img{ border-radius: 5px;
+
+       
+    }
+    
+    ul{
+        display: flex;
+        flex-direction: column;
+        justify-content:space-around;
+        align-items: center;
+        
+    }
+    ul li{
+       color: rgb(0, 6, 7);
+        margin: 10px ;
+        list-style: none;
+    }
+    a{
+       color: rgb(41, 65, 112); 
+       text-decoration: none;
+       font-size: 13px;
+       
+    }
+   
+ #video h1{
+        position: absolute;
+ padding: 45px;
+        margin-top: 25px;
+        margin-left: 20px;
+        font-size: 40px;
+    }
+    
+ 
+    #faceimage img{
+        align-items: center;
+        padding-left: 0px;
+        padding-right: 50px;
+        padding-top: 0px;
+        padding-bottom: 10px;
+        width: 100%;
+        height: 400px;
+       
+        
+    }
+     #faceimage h1{
+        
+        font-family: "Oswald", sans-serif;
+        font-size: 50px;
+        color: rgba(250, 254, 255, 0.395);
+        position: absolute;
+        text-align: center;
+        padding:150px ;
+    }
+    
+    
+    
+    #about h2{
+            text-align: center;
+            text-decoration: underline;
+            font-size: 30px;
+            padding: 10px;
+            color: rgb(3, 27, 35);
+            font-family: "Poetsen One", sans-serif;
+    }
+    #about h2:hover{color: rgba(9, 118, 111, 0.691);
+    }
+    
+    #about h3{
+        padding-bottom: 5px;
+        font-size: 25px;
+        font-family: "Dancing Script", cursive;
+        color: rgb(36, 9, 62);
+        text-align: center;
+    }   
+    
+    #raw { display:flex;
+        flex-direction: column;
+    padding-top: 10px;
+    align-items: center;
+    padding-right: 20px;
+    }
+    
+    #raw p{
+            font-family: "Dancing Script", cursive;
+            text-align: justify;
+            padding: 20px;
+            color: rgba(42, 7, 64, 0.806);
+           
+            font-size: 20px;
+    }
+    #about img{
+            border-radius:50%;
+            padding: 90px;
+            height: 20%;
+    }
+       
+    
+    #projects h2{text-align: center;
+        font-family: "Poetsen One", sans-serif;
+    }
+    
+    .raw1{display: flex;
+        flex-direction: column;
+           justify-content: space-evenly;
+           padding: 10px;
+    }
+    .raw2{display: flex;
+        flex-direction: column;
+          justify-content: space-evenly;
+          padding: 10px;
+    }
+    .col:hover{
+        box-shadow: 4px 5px 6px 7px black;
+    }
+    .col img:hover{
+        
+        transform: rotate(150deg);
+    }
+    .col img{
+        transition:width 2s, height 2s,transform 2s;
+    }
+    
+    
+    #head {text-align: center;
+        text-decoration: underline;
+       padding-top: 20px;
+        font-family: "Poetsen One", sans-serif;
+    }
+    
+    .raw3{
+        display: flex;
+         flex-direction: column; 
+           justify-content: space-evenly;
+            padding: 10px;
+            margin-left: 0;
+    }
+    
+     .col1 { 
+        text-align: justify; 
+      padding-top: 10px;
+      border: 2px solid black;
+      margin: 0px;
+      padding: 10px;
+      background: linear-gradient(to top ,  rgb(5, 85, 81)50% , rgb(40, 171, 171).50%);
+      transition: all 0.5s;
+      background-size: 100% ;
+    
+    }
+    .col1:hover{
+        background-position: bottom;
+    }
+    .col1 h3{text-align: center;
+        font-family: "Poetsen One", sans-serif;}
+    .col1 p{text-align: justify;
+        font-family: "Barlow Condensed", sans-serif;
+    } 
+    
+    
+    /* #contact h2{
+        font-family: "Poetsen One", sans-serif;
+        text-decoration: underline;
+        padding-bottom: 10px;
+        text-shadow: 2px 3px 5px rgb(208, 98, 19);
+    }
+    #contact{
+        padding-bottom: 50px;
+    } */ 
+/*     
+    button{padding:5px;
+         
+    }
+    form{
+        align-items: center;
+        padding: 10px;
+        height: 10px;
+        background-color: rgb(95, 71, 5);
+        margin:10px ;
+        margin-bottom: 20px;
+    }
+    .inp{
+        width: 300px;
+        height: 300%;
+    
+    }
+    
+     */
+}
+
+
+
+
+
+
+
+
+
+   
+

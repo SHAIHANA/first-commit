@@ -1,0 +1,43 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+#nav {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+}
+
+#nav img{
+    height: 95px;
+    padding-left: 50px;
+   
+}
+button{
+    padding: 5px;
+    margin-top: 30px;
+   border: navajowhite;
+    color: rgb(226, 225, 237);
+    font-weight: 700;
+  
+    background-color: rgba(158, 153, 197, 0.798);
+    
+    
+}
+.b1{
+   
+    margin-left: 10px;
+    margin-right: 10px;
+    margin: 25px;
+    border-radius: 15%;
+    margin-right: 20px;
+    
+}
+.r2{
+    margin-right: 15px;
+}
+.hero img{
+    height: 500px;
+    width: 100%;
+}

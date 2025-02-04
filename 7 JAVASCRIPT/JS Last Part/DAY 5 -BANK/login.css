@@ -1,0 +1,85 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+#nav {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+}
+
+#nav img{
+    height: 95px;
+    padding-left: 50px;
+    margin-bottom: 20px;
+   
+}
+button{
+    padding: 9px;
+    font-weight: 700;
+    border: none;
+    margin-top: 40px;
+    margin-left: 10px;
+   
+    margin: 20px;
+    border-radius: 9%;
+    margin-right: 20px;
+
+    color: rgb(17, 17, 116);
+    font-weight:500 ;
+    border: none;
+    
+}
+
+.b1{
+    margin-top: 25px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin: 20px;
+    border-radius: 9%;
+    margin-right: 20px;
+  background-color: rgb(21, 21, 84);
+    color: rgb(215, 215, 226);
+    font-weight:500 ;
+    border: none;
+}
+.r2{
+    margin-right: 15px;
+}
+.log{
+    background-color: rgba(190, 170, 206, 0.659);
+margin-top: 20px;
+text-align: center;
+
+justify-content: center;
+height: 180px;
+padding: 20px;
+
+}
+
+
+.BT{
+    background-color:  rgb(21, 21, 84);
+    font-weight: 500;
+   width: 280px;
+   color: rgb(215, 215, 226);
+   
+}
+.logdiv{
+    height: 50px;
+   
+}
+section{
+text-align:center;
+padding-top: 10px;
+color: rgb(13, 13, 77);
+margin-bottom: 5px;
+}
+.background{
+    background-color: rgb(242, 239, 245);
+    width:100% ;
+}
+form{
+    width: 700px;
+}

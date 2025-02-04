@@ -1,0 +1,22 @@
+<div class="main  " style="background-image:url(https://static.vecteezy.com/system/resources/previews/004/230/475/original/abstract-wavy-stripes-on-a-white-background-isolated-wave-line-art-curved-smooth-design-illustration-eps-10-free-vector.jpg); " >
+    
+    
+    <div class=" p-5 text-center   " >
+
+        <div class=" form text-center align-items-center box-shadow rounded mx-auto p-5 " style="height: fit-content;">
+            <h2>Login Here...</h2>
+    
+            <form [formGroup]="loginForm" class="text-center ">
+    
+                <input formControlName="email" type="text" name="Useremail" placeholder="Email" class="form-control my-3">
+                <input formControlName="password" type="text" name="Userpassword" placeholder="Password" class="form-control my-3">
+    
+                <div class=" button text-center">
+                    <button (click)="login()" type="button" class="btn btn-dark">Sign In </button>
+                    <br>
+                    <a href="user/register" class="text-light p-2">new to here...Please Register ➡️</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,32 @@
+div1{
+    width: 10px;
+    height:90%;
+    background-color: rgb(247, 255, 255);
+    border-color:6px solid rgb(10, 9, 9);
+}
+  div2{
+    width: 25%;
+    height:90%;
+ border: black  3px;
+  } 
+h1{
+    color: black;
+    text-align:center ;
+    width: 25%;
+    height:90%;
+    
+}
+h4{
+   
+   color: white; background-color: red;
+    width: 9%;
+    height: 25px;
+   
+   
+}
+button1{
+    color: rgb(0, 0, 0);
+    background-color:rgb(222, 222, 25) ;
+    width:5% ;
+    height:20px ;
+}

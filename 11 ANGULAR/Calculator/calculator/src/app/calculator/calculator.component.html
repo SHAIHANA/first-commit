@@ -1,0 +1,50 @@
+<p>calculator works!</p>
+
+<body>
+
+    <div class="main">
+        <h1>Calculator</h1>
+        <div class="main1">
+            
+            <input [(ngModel)]="input" placeholder="0" type="text" id="number" />
+
+            <div class="btn">
+
+                <div class="r4">
+                    <button (click)="clearInput()" id="b2">AC</button>
+                    <button (click)="displayNumber('0')" id="b2">0</button>
+                    <button (click)="displayNumber('/')" id="b1">÷</button>
+                    <button (click)="calculate()" id="b1">=</button>
+                </div>
+                <div class="r1">
+                    <button (click)="displayNumber('7')">7</button>
+                    <button (click)="displayNumber('8')">8</button>
+                    <button (click)="displayNumber('9')">9</button>
+                    <button (click)="displayNumber('*')" id="b1">×</button>
+                </div>
+
+
+
+                <div class="r2">
+                    <button (click)="displayNumber('4')">4</button>
+                    <button (click)="displayNumber('5')">5</button>
+                    <button (click)="displayNumber('6')">6</button>
+                    <button (click)="displayNumber('-')" id="b1">-</button>
+                </div>
+
+                <div class="r3">
+                    <button (click)="displayNumber('1')">1</button>
+                    <button (click)="displayNumber('2')">2</button>
+                    <button (click)="displayNumber('3')">3</button>
+                    <button (click)="displayNumber('+')" id="b1">+</button>
+
+                </div>
+                <button (click)="backspace()" id="b3">←</button>
+            </div>
+
+        </div>
+
+
+
+    </div>
+</body>

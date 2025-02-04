@@ -1,0 +1,373 @@
+                                             
+                                   -----------------------------         
+                                               REACT  
+                                    -------------------------
+
+        PROJECT CREATION USING CREATE-REACT-APP
+
+        1. npm create-react-app demo-app
+        2. cd demo-app
+        3. code .
+        4. npm start
+
+     -----------------------------------------------------------------------------
+        PROJECT CREATION USING VITE  : https://vitejs.dev/
+
+        1. npm create vite@latest demo-app -- --template react 
+        2. cd demo-app
+        3. code .
+        4. npm install (For creating node modules)
+        5. npm run dev 
+
+-----------------------------------------------------
+
+
+                                  ISTALLING 3rd  PARTY LIBRARIES
+                           -----------------------------------------------------
+
+
+1 MDB BOOTSRAP  :https://mdbootstrap.com/
+
+STEPS : go to https://mdbootstrap.com/  -> docs->react->get started
+
+
+ npm i mdb-react-ui-kit         ---> for installation
+
+2 FONT AWSOME : 
+         
+         npm i @fortawesome/fontawesome-free
+
+        CSS import :Add the following lines in your index.js file before the App.js file import:
+
+
+ MAIN.js  il :
+      
+        import 'mdb-react-ui-kit/dist/css/mdb.min.css';
+        import "@fortawesome/fontawesome-free/css/all.min.css";
+
+
+3 google fonts : https://fonts.google.com/
+
+
+         <link rel="preconnect" href="https://fonts.googleapis.com">
+         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+         <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,400..700;1,400..700&family=Black+Ops+One&family=Kalnia+Glaze:wght@100..700&family=Lobster&family=Satisfy&display=swap" rel="stylesheet">
+
+
+4  React Material UI :   https://mui.com/material-ui/   :for cards,bar,header...etc
+
+                          npm install @mui/material @emotion/react @emotion/styled
+
+5 React Bootstrap: https://react-bootstrap.github.io/
+
+               -> npm install react-bootstrap bootstrap
+
+               -> index.html pagel head il :
+               
+                <link rel="stylesheet"
+                href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+                 integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+                crossorigin="anonymous"/>  
+
+
+6 React Icons :https://react-icons.github.io/react-icons/
+               
+               npm install react-icons --save
+               
+               
+
+ 7 React bootswatch :https://bootswatch.com/
+
+              (For -->theame dowload cheyth
+              aa fileil poyi cut and projectile src yil paste well)
+                            
+(main.jsx il)-->
+              -> import './bootstrap.min.css'
+              
+                            
+
+
+
+
+8 Redux  :https://redux.js.org/introduction/installation
+
+          -> npm install @reduxjs/toolkit
+          -> npm install react-redux             
+
+
+
+9 React toaster: 
+            for-colorful alerts
+            
+        site:- https://www.npmjs.com/package/react-toastify
+        instal :-    npm install --save react-toastify
+
+         ---------------------------------------
+
+
+-------------------------
+    BASIC CONCEPTS
+--------------------------    
+
+
+              1- Data- Passing -ONE  WAY DATA BINDING 
+              2-Events
+              3-Conditional Rendering
+                           ->if  -> &&
+                           ->if else  -> ?:
+
+            ***  4-React-Routing :  https://reactrouter.com/en/main
+
+                           -install  :  npm install react-router-dom
+
+          (browser rtrinte akath ayrikum app component undayirikuka)
+              BrowserRouter -> A <BrowserRouter> stores the current location in the browser's address bar using clean URLs and navigates using the browser's built-in history stack.
+
+        (onnil koodthal routesine hold cheyyan anu Routes)
+              Routes->Rendered anywhere in the app, <Routes> will match a set of child routes from the current location.
+
+        (oro componentsinum nammal kodukkunna path deffine cheyyan anu Route)     
+             Route->Because the API and use cases for <Route /> includes data loading, mutations, and more, <Route> has its own documentation category.
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+                                 MEDIA APP FRONTEND CREATION
+                           *---------------------------------------------
+
+1. Project creation : npm create vite@latest media-app-frontend -- --template react
+
+
+
+2. cd media-app-frontend
+3. npm install
+4. code .
+5. Run the project : npm run dev
+6. clean your project code
+7. Install 3rd party libraries
+   ->React bootstrap : https://react-bootstrap.github.io/
+          -bootswatch for (THEAM provide cheyyunu) :https://bootswatch.com/
+   ->Font Awsome
+   ->google-Fonts      
+
+
+8.Designing Completed.
+
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+                                           MEDIA APP -- BACKEND CREATION USING JSON-SERVER
+                                         *................................................*
+
+   1 create a folder named ad media-app-BACKEND
+   2 Inside it,create a package.json file => npm init  or npm init -y        
+   3 Install json-server => npm install json-server
+   4 create db.json file
+   5 Run the file => npx json-server db.json                          
+
+
+
+
+   ---------------------------------------------------------------------------------------------------------------------------------------------------------
+                                             *PROJECT - FAIR  - frontend*
+                                         ===================================
+                                             
+
+1. npm create vite@latest project-fair -- --template react 
+        2. cd project-fair
+        3. code .
+        4. npm install (For creating node modules)
+        5. npm run dev  (OOORRRRRR)
+
+
+           [To open react project directly from vs code,
+           update your package.json file and add the following lines insides scripts
+           
+           scripts:[
+              "dev":"vite --open           ]
+           ]
+       OR
+
+       run the following command :npm run dev -- --open
+       
+
+        6.Clear the unwanted code 
+
+        7.Install 3rd party libraries
+
+          -React Bootstrap/React materialui/MDB bootstrap
+               MDB bootstrap
+
+               ->npm u mdb-react-ui-kit
+
+               import into main.jsx file  
+
+               import 'mdb-react-ui-kit/dist/css/mdb.min.css';
+               
+        -Font awsome /React icon github io
+          React icon github
+             https://react-icons.github.io/react-icons/
+
+             ->npm install react-icons --save
+
+             eg:Search for laptop
+               
+                import { Gilaptop } from "react-icons/gi";
+                <Gillaptop/>
+
+        -Google fonts   
+        -Bootsewatch
+
+
+
+        8.components   creation
+             -pages(folder)
+
+                 ->Home.jsx
+                 ->projects.jsx
+                 ->Dashboard.jsx
+                 ->Auth.jsx  
+
+             -components
+
+                 ->header.jsx
+                  ->footer.jsx
+
+9.path creation
+    Install npm i react-router-dom
+
+    My points
+   *1 --> main.jsx 
+        <SatrictMode>
+          <BrowserRouter>
+            <App/>
+          </BrowserRouter>
+        </SatrictMode>
+
+*2 -->import {BrowserRouter}
+*3 -->app.jsx
+
+   <Routes>
+      <Route path='/' element={<Home/>}/>
+    </Routes>
+
+    & import Routes and Route
+                       ----------------------------------------------------------------------
+                                              *PROJECT - FAIR  - Backend*
+  ==================================================================================================================================================
+
+1. Create a folder for backend - project-fair-backend
+2. Create package.json file - npm init -y
+3. Install 3rd party packages
+
+      1. Express - npm i express
+              ->Express.js is the most popular backend framework for Node.js, and it is an extensive part of the JavaScript ecosystem.
+              ->It is designed to build single-page, multi-page, and hybrid web applications
+              -> it has also become the standard for developing backend applications with Node.js, and it is the backend part of something known as the MERN stack.
+
+              ->The MERN is a free and open-source JavaScript software stack for building dynamic websites and web applications that has the following components:
+
+              ->MongoDB: MongoDB is the standard NoSQL database
+              ->Express.js: The default web applications framework for building web apps
+              ->React.js: The JavaScript framework used for building front-end web applications
+              ->Node.js: JavaScript engine used for scalable server-side and networking applications.
+
+      2. CORS - npm i cors 
+              ->The word CORS stands for “Cross-Origin Resource Sharing”. Cross-Origin Resource Sharing is an HTTP-header based mechanism implemented by the browser which allows a server or an API(Application Programming Interface) to indicate any origins (different in terms of protocol, hostname, or port) other than its origin from which the unknown origin gets permission to access and load resources. The cors package available in the npm registry is used to tackle CORS errors in a Node.js application.
+
+              Environment variables are variables external to our application which reside in the OS or the container of the app is running in. An environment variable is simply a name mapped to a value.
+              Data which changes depending on the environment your app is running on should be set as environment variables. Some common examples are:
+
+              -HTTP Port and Address
+              -Database, cache, and other storage connection information
+              -Location of static files/folders
+              
+       3. The dotenv Library - npm i dotenv
+              This library does one simple task: loads environment variables from a .env file into the process.env variable in Node.jsThe dotenv Library
+
+       4. add .env and gitignore files
+              give node_modules in gitignore
+
+       5. create index.js file (root file/ main entry point)
+
+
+
+
+                     -----------------------     
+                         MVC Architecture
+                     ------------------------
+
+
+    What is Model-View-Controller?
+
+    MVC is simply a design or architectural pattern used in software engineering. 
+    While this isn’t a hard rule, but this pattern helps developers focus on a particular aspect of their application, one step at a time.
+
+    The main goal of MVC is to split large applications into specific sections that have their own individual purpose.
+
+    It also allows developers to logically structure applications in a secure way, which we will show in this tutorial. But first, let’s break down what each aspect of the pattern provides.
+
+    Model
+    As the name implies, a model is a design or structure. 
+    In the case of MVC, the model determines how a database is structured, defining a section of the application that interacts with the database. 
+    This is where we will define the properties of a user that will be store in our database.
+    The controller accesses the database through the model. You could say that the model is the heart of the application.
+
+    View {here react}
+    The view is where end users interact within the application.
+    Simply put, this is where all the HTML template files go.
+
+    Controller
+    The controller interacts with the model and serves the response and functionality to the view. 
+    When an end user makes a request, it’s sent to the controller which interacts with the database.
+
+    You can think of the controller as a waiter in a restaurant that handles customers’ orders, which in this case is the view. The waiter then goes to the kitchen, which is the model/database, and gets food to serve the customers, which is the controller handling the request.
+
+    Model(copy of the database) and controller(all the logic goes here) in backend
+
+    6. Create router, controller, model folders
+
+       1. Routes - Used to create router object of express to define path
+                   => Create file named router.js
+                   => import express and create router object
+                   => export router from the file
+                   => import router in index.js
+                   => use router in express server application
+
+       2. Controllers - Used to  implement logic to resolve client requests
+
+       3. Models - to define Schema and model for MongoDB collection using Mongoose
+                   => Create a folder
+                   => Create a js file to define Schema and model for MongoDB collection
+
+
+
+
+
+                                ---------------
+                                   MONGOOSE   (mongodb ne node vech access cheyyunna oru library  an mongoose)
+                                ---------------   
+
+       => Its an OBJECT DATA MODEL (ODM) for node.js
+       => Used to connect nodejs with MongoDB
+       => Mongoose is a MongoDB object modeling tool designed to work in an asynchronous environment. Mongoose supports Node.js and Deno (alpha).
+
+                                Install npm i mongoose
+
+       => Schema: Structure of the document that we want to store in a collection
+       => Model: Copy of collection in MongoDB
+
+
+       7. Create a DB in MongoDB
+       8. copy connection string into .env file
+       9. Create a DB folder in backend, create a connection.js file
+
+
+
+
+
+--------------------------
+
+cd index.js
+
+nodemon (filename)

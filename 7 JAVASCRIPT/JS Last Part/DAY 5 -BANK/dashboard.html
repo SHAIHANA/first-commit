@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <!--css-->
+    <link rel="stylesheet" href="./dashboard.css">
+
+    <!-- js -->
+     <script src="./dashboard.js"></script>
+
+        <!-- bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    
+        <!-- fontawesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+</head>
+<body>
+
+    <header class="d-flex justify-content-between p-2  " style="background-color: rgba(255, 255, 255, 0.784);">
+        <div class="">
+          
+            <nav id="nav">
+                <div class="r1">
+                <img src="data:image/png;base64,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" alt="">
+                </div>
+        
+                
+            </nav>
+       
+
+        </div>
+        <div class=" logout mt-2">
+            <button type="button" class="btn mx-5 mt-3 border-dark" onclick="logout()">Logout</button>
+        </div>
+    </header>
+    
+
+<div id="welcome">
+    <div class="-container p-1 " >
+        <h1 class="t text-center" id="welcomeUser">Welcome</h1>
+        <h3 class="t text-center">Online Banking Services</h3>
+    </div>
+    <div class="container text-center ">
+        <div class="row d-flex justify-content-center ">
+            <div class="col-5 m-3 p-5 bg-light">
+                <h3 class="text-dark">Deposit</h3>
+                <form>
+
+                    <div class="mb-3 ">
+
+                        <input type="text" class="form-control w-100 " id="depsitAmt" placeholder="Amount">
+
+                    </div>
+                    <div class="mb-3">
+
+                        <input type="password" class="form-control w-100 " id="depoPswd" placeholder="Password">
+                    </div>
+
+                    <button type="button" class=" dep " onclick="deposit()">Deposit</button>
+
+                </form>
+            </div>
+
+
+            <div class="col-5 bg-light  m-3 p-5">
+                <h3 class="text-dark">Withdraw</h3>
+                <form>
+                    <div class="mb-3">
+
+                        <input type="text" class="form-control w-100" id="withdrawAmt" placeholder="Amount">
+
+                    </div>
+                    <div class="mb-3">
+
+                        <input type="password" class="form-control w-100" id="withdrawPswd" placeholder="Password">
+                    </div>
+
+                    <button type="button" class="withd " onclick="withdraw()">Withdraw</button>
+                </form>
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+    <div class="border border-0 container d-flex justify-content-center align-items-center mt-2" id="trans">
+       
+    </div>
+</div>    
+    <script>
+        username= localStorage.getItem("username")
+        welcomeUser.innerHTML= `Welcome ${username}`
+    </script>
+</body>
+</html>

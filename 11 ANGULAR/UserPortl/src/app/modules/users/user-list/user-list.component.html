@@ -1,0 +1,87 @@
+<div class="row">
+  <div class=" col-2 sidebar  text-center">
+    <p class="fw-bolder fs-6 m-4"><a class="text-decoration-none" routerLink="/dashboard">Home</a></p>
+    <p class="fw-bolder fs-6 m-4"> <a class="text-decoration-none" routerLink="/users">User</a></p>
+  </div>
+
+  <div class="col-9">
+    <div class="row">
+      <div class="col-6">
+        <h2 class="m-3">All Users List</h2>
+      </div>
+      <div class="col-6">
+        <button class="btn p-1 m-4 rounded border  text-dark fw-bolder " style="background-color:violet; float: right;"
+          routerLink="/users/add">Add User</button>
+      </div>
+    </div>
+<!-- {{searchKey}}thaze ulla ngModel crrct ano enn ariyan an ee searchKey interpollation cheyth nokiyath -->
+    <div class="d-flex justify-content-evenly">
+      <input [(ngModel)]="searchKey" name="searchKey" type="text"  id="" placeholder="Search By Name" class="form-control w-50 ">
+
+
+      <div class="dropdown">
+        <button class="btn btn-dark border rounded dropdown-toggle" data-bs-toggle="dropdown">Sort</button>
+        <ul class="dropdown-menu">
+
+          <li><button (click)="sortById()" class="dropdown-item" type="button">Sort By Id</button></li>
+          <li><button (click)="sortByName()" class="dropdown-item" type="button">Sort By Name</button></li>
+
+        </ul>
+
+      </div>
+
+      <button (click)="GeneratePDF()" class="btn btn-success border rouded">Export</button>
+    </div>
+
+
+    <div class="table container mt-5 px-5 border  border-dark">
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">EmpID</th>
+            <th scope="col">Name</th>
+            <th scope="col">Email</th>
+            <th scope="col">Status</th>
+            <th scope="col">Action</th>
+          </tr>
+        </thead>
+        <tbody   >
+
+          <tr *ngFor="let user of alluser"    [hidden]="user.id=='1'" >                                                     
+            <th scope="row"></th>
+            <td>{{user.id}}</td>
+            <td>{{user.name}}</td>
+            <td>{{user.email}}</td>
+            <td [ngClass]="user.active==='1'?
+                    'text-success':'text-danger'"> {{user.active==='1'?
+              "Active":"Inactive "}}</td>
+              
+              
+              
+            <td>
+              <i routerLink="edit/{{user.id}}" class="fa-solid fa-pen text-dark p-2 m-2"></i>
+              <i (click)="deleteUser(user.id)" class="fa-solid fa-trash text-danger"></i>
+            </td>
+            
+          </tr>
+
+
+        </tbody>
+      </table>
+      
+
+      <!--PAGINATION CODE-->
+      <!-- <pagination-controls (pageChange)="p = $event"></pagination-controls> -->
+      <!--  | paginate: { itemsPerPage: 4, currentPage: p } -->
+      
+
+    </div>
+  </div>
+
+
+
+
+
+
+</div>

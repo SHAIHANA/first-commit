@@ -1,0 +1,33 @@
+*{
+    text-align: center;
+    background-color: aquamarine;
+}
+
+h1{
+color: rgb(236, 218, 218);
+}
+.div{
+    color: rgb(24, 115, 129);
+    text-align: center;
+}
+#head{
+    background-color: rgb(7, 48, 95);
+}
+button{
+    background-color: rgba(11, 212, 212, 0.976);
+    color: rgb(18, 8, 65);
+
+}
+button:hover{
+    background-color: bisque;
+}
+p::first-line{
+    color: chocolate;
+    font-style: italic;
+    font-size: medium;
+}
+p::first-letter{
+    color: darkblue;
+    font-size: larger;
+    
+}

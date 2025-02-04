@@ -1,0 +1,24 @@
+<p>viewproduct works!</p>
+<!-- Product section-->
+<section class="py-3">
+    <div class="container px-3 px-lg-5 my-5 " >
+        <div class="row  gx-4 gx-lg-5 align-items-center">
+            <div class="col-5 text-center"><img class="card-img-top mb-5 mb-md-0" width="30%" height="400px"
+                    [src]=product.image /></div>
+
+
+            <div class="col-7 text-center align-items-center">
+                <div class="small mb-1">{{product.id}}</div>
+                <h2 class="display-5 fw-bolder">{{product.title}}</h2>
+                <div class="fs-5 mb-5">
+                    <h2 class="text-decoration">${{product.price}}</h2>
+
+                </div>
+                <p class="lead">{{product.description}}</p>
+                <div class=" d-flex p-4 text-center align-items-center">
+                    <button (click)="addTowishlist(product)" class="btn text-center align-items-center rounded shadow btn-outline-dark m-2">Add Wishlist</button>
+                  <button (click)="addtoCart(product)" class="btn text-center align-items-center rounded shadow btn-outline-dark m-2">Add To Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>

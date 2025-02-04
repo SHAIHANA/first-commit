@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js implement into html</title>
+    <script src="./script.js"></script>
+
+</head>
+<body>
+    <!-- id -->
+    <h1 id="head" >Welocme</h1>
+
+    <!-- Class -->
+    <ol>
+        <li class="cls">document.getElementByIdName("Id_Name")></document></li>
+        <li>document.getElementByClassNam("Class_Name")</li>
+    </ol>
+
+    
+    <script>
+        // document.getElementById
+        const doc=document.getElementById("head")
+        console.log(doc);
+        doc.style.color="yellow"
+
+        //document.getElementByClassName
+        const doc1=document.getElementsByClassName("cls")
+        console.log(doc1);//HTML collection
+        console.log(Array.from(doc1));
+        console.log(Array.from(doc1).map(item=>item.style.color="blue"));
+    </script>
+</body>
+</html>

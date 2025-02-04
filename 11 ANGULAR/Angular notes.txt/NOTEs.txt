@@ -1,0 +1,33 @@
+----PAGINATION----
+
+ngx pagination
+https://www.npmjs.com/package/ngx-pagination
+
+---DOCUMENTATION----
+ https://github.com/michaelbromley/ngx-pagination/blob/master/README.md
+
+
+     
+     
+----------EXPORT----------
+
+<--install-->
+
+npm install jspdf jspdf-autotable
+
+-----JS-pdf-----    
+https://www.npmjs.com/package/jspdf?activeTab=readme
+
+
+
+-----Auto table pdf----- automatically table formTILEKK  mati edukan an ith
+https://www.npmjs.com/package/jspdf-autotable
+
+
+
+-----CHART adding----
+
+website:-
+ https://www.highcharts.com/  
+
+ https://www.npmjs.com/package/highcharts-angular

@@ -1,0 +1,18 @@
+.row{
+    background-color: rgb(54, 30, 30);
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: space-around;
+    /*-- centre,start,end,space around,space between,space evenly*/
+    align-items: center;
+}
+.col{
+    width: 150px;
+    height: 600px;
+    background-color: rgb(105, 74, 74);
+    
+}
+.col1{
+    background-color: rgb(206, 134, 180);
+}

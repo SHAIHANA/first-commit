@@ -1,0 +1,23 @@
+.sidebar{
+    background-color: rgb(192, 187, 187);
+    height: 550px;
+}
+.box{
+    background-image: url(https://static.vecteezy.com/system/resources/previews/003/219/197/original/seamless-check-pink-pattern-textile-tartan-plaid-swatch-free-vector.jpg);
+    background-size: cover;
+}
+a{
+    color: white;
+}
+.admin{
+   height: 330px;
+   width: 22%;
+   padding: 1%;
+   margin-left: 2%;
+}
+.users{
+    height: 120px;
+    width: 100%; 
+    background-image: url(https://static.vecteezy.com/system/resources/previews/003/219/197/original/seamless-check-pink-pattern-textile-tartan-plaid-swatch-free-vector.jpg);
+    background-size: cover;
+}

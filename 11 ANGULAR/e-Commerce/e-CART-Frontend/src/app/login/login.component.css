@@ -1,0 +1,13 @@
+.main{
+
+   width: 100%;
+   height:500px;
+   background-size:contain;
+    
+}
+.form{
+    width: 55%;
+    
+    background-color: rgba(22, 19, 19, 0.5)
+    ;
+}

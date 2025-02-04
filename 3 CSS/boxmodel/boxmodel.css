@@ -1,0 +1,29 @@
+
+
+div{
+width:20%;
+height:700px ;
+background-color: rgb(182, 189, 204);
+border: 3px solid ;
+float: right;
+padding-right:10px;
+margin: 10px;
+border-radius:v
+
+}
+img{
+    width:80% ;
+    padding:60%;
+    border: 3px solid rgb(98, 157, 11) ;
+    padding:15px; 
+    margin: 20px;
+    
+    }
+h1{
+    text-align: center;
+}
+
+p{
+    text-align: justify;
+    padding:10px ;
+}

@@ -1,0 +1,43 @@
+
+<div  class="container ">
+    <div class="row "  *ngIf=" products.length>0" >
+        <div *ngFor="let product of products"   class=" col-3 mt-3  mb-3">
+            <div class="card h-70  w-70 justify-content-between">
+                <!-- Product image-->
+                <img class="card-img-top" [src]="product.image" width="250px" height="250px" alt="..." />
+                <!-- Product details-->
+                <div class="card-body p-5">
+                    <div class="text-center">
+                        <!-- Product name-->
+                        <h5 class="fw-bolder">{{product.title}}</h5>
+                        <!-- Product price-->
+                        ${{product.price}}
+                    </div>
+                    <div class="d-flex justify-content-center small text-warning mb-2">
+                        <div class=" bi-star-fill"></div>
+                        <div class=" bi-star-fill"></div>
+                        <div class=" bi-star-fill"></div>
+                        <div class=" bi-star-fill"></div>
+                        <div class=" bi-star-fill"></div>
+                    </div>
+                </div>
+                <!-- Product actions-->
+                <div class=" d-flex card-footer p-2 pt-0 border-top-0 bg-transparent  justify-content-between">
+                    <div class="text-center"><a class="btn btn-outline-dark mt-auto" (click)="deleteProduct(product.id)">Delete from wishlist <i
+                                class="fa-solid fa-trash"></i></a></div>
+                    <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to cart <i
+                                class="fa-solid fa-cart-shopping"></i></a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!--Empty wishlist-->
+<div class="container text-center border col-5 " *ngIf=" products.length==0" >
+    <img src="https://media3.giphy.com/media/0HhDnlH89djZtRqYoO/giphy.gif" alt="">
+    <p class="mt-0">Your wishlist was empty</p>
+    <button class="btn btn-dark m-3 ">Explore More...</button>
+</div>

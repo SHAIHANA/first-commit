@@ -1,0 +1,12 @@
+My Web Development Journey: Westside Clone Project 🚀
+I'm excited to announce the completion of my latest project—a clone of the Westside website, built using HTML, CSS, and Bootstrap. This project has been an incredible learning experience, pushing me to enhance my web development skills and creativity.
+Project Highlights:
+Adaptive Design: Developed to ensure the site maintains its functionality and aesthetics across various devices.
+Engaging Features: Crafted a smooth and intuitive user interface for a better browsing experience.
+Sleek Design Elements: Applied Bootstrap to create a modern, clean look.
+Speed and Efficiency: Focused on optimizing the site for faster load times and more efficient code.
+I extend my heartfelt thanks to Amritha Asokan, Shanthi Varghese, Graceson J, and Rahul Mohanakumar at Luminar Technolab for their continuous guidance and support throughout this journey. Your mentorship has been invaluable. 🙏
+
+🔗Live Link: https://lnkd.in/gCvgjy2y
+
+ 📽 Demo Video

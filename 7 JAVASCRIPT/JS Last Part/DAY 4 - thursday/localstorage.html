@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local storage</title>
+
+    <!--BT link-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+    
+    <h1>local storage</h1>
+   
+
+<!--JS-->
+
+<script>
+    //setItem  
+//---Local stoaragel set cheyan
+    
+     localStorage.setItem("Username", "Alen")
+
+
+       let Student ={
+            Rollno :1,
+           Name : "Shana",
+            Batch : "MEARN STACK" 
+        }
+
+        localStorage.setItem("student-details", JSON.stringify(Student))
+
+
+
+    //getItem //
+ //---store cheytha values get cheyan
+
+//single data get cheyyan aah data yude name (key)kodth cheyanam -ivde User name  enna key yil 'Alen' enna value get cheym
+    var student_name = localStorage.getItem("Username") //  
+    console.log(student_name)//consoleil kitum
+
+
+// objectil aanu data enkil ..  thazathe pole cheyanam
+//-json.parse il koduthath entire objectine edukkan anu
+    var student_data = JSON.parse(localStorage.getItem("student-details"))
+    console.log(student_data);
+
+
+
+//Remove cheyanam enkil
+    // localStorage.removeItem("student-details")
+    // localStorage.removeItem("Username")
+
+
+// Clear akanam enkil
+localStorage.clear()   
+
+</script>
+</body>
+</html>

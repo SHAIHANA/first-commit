@@ -1,0 +1,50 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+#nav {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+}
+
+#nav img{
+    height: 88px;
+    padding-left: 50px;
+   
+}
+#welcome{
+   /* background-image: url(https://www.cryptovibes.com/wp-content/uploads/2020/07/Deutsche-Bank1.jpg);
+   background-size: cover; */
+   height: 500px;
+   background-color: rgb(229, 221, 236);
+}
+
+.t{
+    color:rgb(13, 13, 122) ;
+}
+.logout button:hover{
+    background-color: rgb(9, 9, 131);
+    color: rgb(215, 215, 226);
+}
+.logout button{
+   color: rgb(21, 21, 84);
+   font-weight:650 ;
+}
+
+.dep,.withd{
+    color: rgb(21, 21, 84);
+    font-weight:500 ;
+    border: none;
+    padding: 5px;
+    width: 100px;
+}
+.dep:hover{
+    background-color: rgb(21, 21, 84);
+    color: rgb(215, 215, 226);
+}
+.withd:hover{
+    background-color:rgb(21, 21, 84);
+    color: rgb(215, 215, 226);
+}

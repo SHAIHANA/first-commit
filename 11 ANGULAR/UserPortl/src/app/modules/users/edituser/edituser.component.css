@@ -1,0 +1,11 @@
+.sidebar{
+    background-color: rgb(192, 187, 187);
+    height: 510px;
+}
+a{
+    color: white;
+}
+button{
+    background-color: rgb(176, 157, 157);
+    color: rgb(253, 248, 248);
+}

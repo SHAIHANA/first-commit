@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Object Model</title>
+    <script src="./script.js"></script>
+</head>
+<body>
+    <!-- <script>
+        var array=[1,2,3,4,5]
+        console.log(array);
+    </script> -->
+<!-- <button onclick="colorchange()">Click Me</button> -->
+ 
+
+    <h1 id="head">Welcome to DOM</h1>
+    <button onclick="backgroundColor()">Try Me</button>
+    
+    <h1 class="cls">DOM</h1>
+    
+    <ol>
+        <li class="cls">document.getElementById("id_name")</li>
+        <li>document.getElementByClassName("class_name")</li>
+        <li>document.getElementByTagName("Tag_Name")</li>
+        <li>document.getElementBy</li>
+    </ol>
+    
+    
+<script>
+       // for button 
+       function backgroundColor() {
+        const docA=document.getElementById="head"
+        console.log(docA);
+        doc.style.color="black"
+        doc.style.backgroundColor="green"
+        
+       } 
+        
+// // //document.getelementbyid
+        
+        const doc=document.getElementById("head")// document is h1 aanu
+        console.log(doc);
+        doc.style.color="red"
+        
+
+// //document.getElementsByClassName
+        const doc1=document.getElementsByClassName("cls")
+        console.log(doc1);//HTML collection
+        console.log(Array.from(doc1)); // to array --using array.from 
+        console.log(Array.from(doc1).map(item=>item.style.color="blue"));
+
+// //document.getElementByTagName
+        const doc2=document.getElementsByTagName("li")
+        console.log(doc2); //HTML collection
+        console.log([...doc2]); //to array-- using spred operator (...)
+        console.log([...doc2].map(item=>item.style.color="green"));
+
+// // //document.querySelector(".class_name,#id_name")
+        const doc3=document.querySelector(".cls")
+        console.log(doc3);
+
+// // //document.querySelectorAll(".class_name,#id_name")    
+const doc4=document.querySelectorAll(".cls")
+console.log(doc4);   
+      
+</script>
+
+</body>
+</html>

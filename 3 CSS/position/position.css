@@ -1,0 +1,23 @@
+.row{
+    background-color: rgb(221, 195, 195);
+    width: 100%;
+    height: 700px;
+    position: relative;
+}
+.col{
+    width: 100px;
+    height: 400px;
+    background-color: rgb(80, 7, 7);
+    position: absolute;
+    
+}
+.col1{
+    left: 150px;
+    top: 50px;
+    background-color: rgb(165, 130, 198);
+}
+.col2{
+    left: 300px;
+    top:70px;
+    background-color: cadetblue;
+}

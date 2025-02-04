@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unique style button task</title>
+</head>
+<body>
+    <h1 id="head">DOM getElementById()</h1>
+
+    <p id="p">This is the first paragraph</p>
+
+    <p>This is the second paragraph</p>
+    <p>This is the third paragraph.</p>
+
+    <button onclick="colorchangeA()">green</button>
+     <button onclick="colorchange1()" >blue</button> 
+     <button  onclick="colorchange2()">red</button>
+
+
+     <script>
+         const doc=document.getElementById("head")
+         console.log(doc)
+         doc.style.color="blue";
+
+
+        //  const doc1=document.getElementById("p")
+        //  console.log(doc1)
+        //  doc1.style.color="blue";
+
+
+
+//button   
+    function  colorchangeA(){
+    const doc1=document.getElementById("p")
+    console.log(doc1);
+    doc1.style.color="green"  
+}
+
+
+function  colorchange1(){
+    const doc1=document.getElementById("p")
+    console.log(doc1);
+    doc1.style.color="blue"  
+     
+
+    }
+
+ function colorchange2(){
+    const doc1=document.getElementById("p")
+    console.log(doc1);
+    doc1.style.color="red"
+ }    
+    
+    
+
+
+
+
+     
+    
+
+     </script>
+</body>
+</html>

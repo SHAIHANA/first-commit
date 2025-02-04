@@ -1,0 +1,82 @@
+<div class="raw d-flex" >
+
+    <div class="col-8 text-center "  *ngIf="cartItem.length>0">
+        <h3 class="mt-5 shadow">Product in your cart</h3>
+        <table class="table shadow m-4 mt-5">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Id</th>
+                    <th scope="col">Item</th>
+                    <th scope="col">Image</th>
+                    <!-- <th scope="col">Price</th> -->
+                    <th scope="col">Quantity</th>
+                    <th scope="col">Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let cart of cartItem; let i=index">
+                    <th scope="row">{{i+1}}</th>
+                    <td>{{cart.id}}</td>
+                    <td>{{cart.title}}</td>
+                    <td><img [src]="cart.image" alt="" width="100px"></td>
+                    <td>
+                        <div class="d-flex">
+                            <button class="btn">-</button>
+                            <input type="text" class="form-control" style="max-width:45px " [value]="cart.quantity" readonly>
+                            <button class="btn">+</button>
+                        </div>
+                    </td>
+                    <td class="text-center">
+                        <button (click)="deleteCart(cart.id)" class="btn"> <i class="fa-solid fa-trash"></i></button>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+
+    <!--summery card-->
+    <div class="col-3 mx-5 m-5  shadow text-center justify-content-center">
+        <div class="card  p-3">
+            <h3>Cart Summery</h3>
+            <h3>Total Price:$0</h3>
+            <input type="button" value="CheckOut" class="btn btn-success" data-bs-toggle="modal"
+                data-bs-target="#exampleModal">
+
+
+            <!--Modal-->
+
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Payment Form</h1>
+
+                        </div>
+                        <div class="modal-body ">
+                            <div class=" text-center ">
+                                <input class="m-1 rounded form-control" type="text" value="Name"><br>
+                                <input class="m-1 rounded form-control" type="text" value="Address"><br>
+                                <input class="m-1 rounded form-control" type="text" value="Phone no"><br>
+                                <p>Your Total Price:</p>
+                                <input class="btn btn-success" type="button" value="Make Pyment">
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- //empty cart -->
+<div class="container p-3 mt-5 " *ngIf="cartItem.length==0" >
+    <h4>Your Cart is Empty</h4>
+    <img src="https://cdn-icons-png.flaticon.com/512/11329/11329060.png" width="30%" height="300px" alt="">
+</div>
