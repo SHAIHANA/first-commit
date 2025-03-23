@@ -9,6 +9,8 @@ import { ApiService } from '../services/api.service';
 export class WishlistComponent implements OnInit {
   //2--res variable
   products: any[] = [];
+//variable creation for display
+product: any = []
 
   constructor(private api: ApiService) { }
 
@@ -52,4 +54,30 @@ deleteProduct(id:any){
   })
 }
 
+
+
+ //Add to cart ---Same from viewproduct.component.ts
+
+ addtoCart(product: any) {
+
+  if (sessionStorage.getItem("token")) {
+    product.quantity=1
+    this.api.addToCartAPI(this.product).subscribe({
+      next: (res: any) => {
+        console.log(res);
+        alert(res)
+      },
+      error: (err: any) => {
+        alert(err.error)
+        console.log(err);
+
+      }
+    })
+  }
+  else {
+    alert("Please login")
+  }
 }
+}
+
+

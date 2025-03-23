@@ -1,9 +1,9 @@
-const carts=require('../models/cartSchema')
+const carts = require('../models/cartSchema')
 
 //Add to CART
-exports.addtoCart=async(req,res)=>{
-    const{id,title,price,image,quantity}=req.body
-    const userId=req.payload
+exports.addtoCart = async (req, res) => {
+    const { id, title, price, image, quantity } = req.body
+    const userId = req.payload
 
 
     try {
@@ -11,15 +11,15 @@ exports.addtoCart=async(req,res)=>{
         const cartProduct = await carts.findOne({ id, userId })
 
         if (cartProduct) {
-            cartProduct.quantity+=1
-            cartProduct.grantTotal=cartProduct.quantity*cartProduct.price
+            cartProduct.quantity += 1
+            cartProduct.grantTotal = cartProduct.quantity * cartProduct.price
             await cartProduct.save()
             res.status(200).json("Product Updated...")
         }
         else {
             const newProduct = new carts
-            ({ id, title, price, image,quantity, userId })
-            newProduct.grantTotal=newProduct.quantity*newProduct.price
+                ({ id, title, price, image, quantity, userId })
+            newProduct.grantTotal = newProduct.quantity * newProduct.price
             await newProduct.save()
             res.status(200).json("product added succeessfully")
         }
@@ -60,6 +60,39 @@ exports.deleteCart = async (req, res) => {
             res.status(200).json(cartItem)
         }
     }
+    catch (err) {
+        res.status(403).json("Error" + err)
+    }
+}
+
+
+//Increment CART Product
+
+exports.IncrementCart = async (req, res) => {
+    const {id} = req.params
+    const userId = req.payload
+
+
+    try {
+        //Check if the product already in the cart
+        const cartProduct = await carts.findOne({ id, userId })
+
+        if (cartProduct) {
+            cartProduct.quantity += 1
+            cartProduct.grantTotal = cartProduct.quantity * cartProduct.price
+            await cartProduct.save()
+           //get all the product after updating
+           const cartItem = await carts.find({ userId })
+           res.status(200).json(cartItem)
+           
+        }
+        else {
+            
+            res.status(404).json("Item not found")
+        }
+        //then,last routes set akuka
+    }
+
     catch (err) {
         res.status(403).json("Error" + err)
     }

@@ -7,9 +7,9 @@
                 <tr>
                     <th scope="col">#</th>
                     <th scope="col">Id</th>
-                    <th scope="col">Item</th>
+                    <th scope="col">Product</th>
                     <th scope="col">Image</th>
-                    <!-- <th scope="col">Price</th> -->
+                    <th scope="col">Price</th>
                     <th scope="col">Quantity</th>
                     <th scope="col">Action</th>
                 </tr>
@@ -20,6 +20,8 @@
                     <td>{{cart.id}}</td>
                     <td>{{cart.title}}</td>
                     <td><img [src]="cart.image" alt="" width="100px"></td>
+                    <td>{{cart.price}}</td>
+                    
                     <td>
                         <div class="d-flex">
                             <button class="btn">-</button>
